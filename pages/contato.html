@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Pega na Vara</title>
+    <link rel="icon" href="../assets/img/Logo.png" />
+    <link rel="stylesheet" href="../assets/css/contato.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-header__brand" href="./index.html" aria-label="Página inicial">
+        <img class="site-header__logo" src="../assets/img/Logo.png" alt="Logotipo Pega na Vara" />
+      </a>
+  <nav class="site-header__nav" aria-label="Menu principal">
+        <button
+          id="mobile-menu-btn"
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          data-menu-toggle
+        >
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="sr-only">Alternar menu de navegação</span>
+        </button>
+        <div class="nav-menu site-header__menu" id="nav-menu">
+          <ul class="nav-menu__list">
+            <li class="nav-menu__item"><a class="nav-menu__link" href="./index.html">Home</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link" href="./sobre.html">Sobre</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link" href="./peixes.html">Peixes</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link" href="./contato.html">Contato</a></li>
+          </ul>
+          <a class="button button--secondary nav-menu__cta" href="./login.html" data-auth-login>Login</a>
+          <button type="button" class="button button--secondary nav-menu__cta" data-auth-logout hidden>Sair</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-content" data-page="contact">
+      <section class="page-section">
+        <div class="section-header">
+          <h1 class="section-title">Central de atendimento</h1>
+          <p class="section-subtitle">
+            Entre em contato com a equipe Pega na Vara para suporte, eventos e parcerias.
+          </p>
+        </div>
+        <div class="contact-grid">
+          <article class="contact-card" aria-labelledby="contact-general">
+            <h3 class="contact-card__title" id="contact-general">Informações gerais</h3>
+            <ul class="contact-card__list">
+              <li><strong>Telefone:</strong> (41) 3365-4100</li>
+              <li><strong>E-mail:</strong> peganavara_oficial@gmail.com</li>
+              <li><strong>Endereço:</strong> Rua Não Existente da Cruz, Nº312 - Curitiba/PR</li>
+            </ul>
+          </article>
+
+          <article class="contact-card" aria-labelledby="contact-moderators">
+            <h3 class="contact-card__title" id="contact-moderators">Moderadores</h3>
+            <ul class="contact-card__list">
+              <li><strong>Thiago:</strong> (41) 99999-8888 · thiagoficticio@gmail.com</li>
+              <li><strong>Cassiano:</strong> (41) 99777-3333 · cassianoficticio@gmail.com</li>
+              <li><strong>Arthur:</strong> (41) 98833-2536 · arthurficticio@hotmail.com</li>
+            </ul>
+          </article>
+
+          <figure class="contact-card contact-card--media" aria-labelledby="contact-illustration">
+            <img src="../assets/img/Logo.png" alt="Ilustração da comunidade Pega na Vara" />
+            <figcaption id="contact-illustration">Atendimento dedicado para manter sua experiência de pesca sempre positiva.</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="site-footer__text">2025 &copy; Pega na Vara. Todos os direitos reservados.</p>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

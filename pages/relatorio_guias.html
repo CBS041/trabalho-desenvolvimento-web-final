@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Pega na Vara</title>
+    <link rel="icon" href="../assets/img/Logo.png" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a
+        class="site-header__brand"
+        href="./index.html"
+        aria-label="Página inicial"
+      >
+        <img
+          class="site-header__logo"
+          src="../assets/img/Logo.png"
+          alt="Logotipo Pega na Vara"
+        />
+      </a>
+      <nav class="site-header__nav" aria-label="Menu principal">
+        <button
+          id="mobile-menu-btn"
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          data-menu-toggle
+        >
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="sr-only">Alternar menu de navegação</span>
+        </button>
+        <div class="nav-menu site-header__menu" id="nav-menu">
+          <ul class="nav-menu__list">
+            <li class="nav-menu__item">
+              <a class="nav-menu__link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link" href="./sobre.html">Sobre</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link" href="./peixes.html">Peixes</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link" href="./contato.html">Contato</a>
+            </li>
+          </ul>
+          <a class="button button--secondary nav-menu__cta" href="./login.html" data-auth-login>Login</a>
+          <button type="button" class="button button--secondary nav-menu__cta" data-auth-logout hidden>Sair</button>
+        </div>
+      </nav>
+    </header>
+
+  <main class="page-content" data-page="guides-report" data-requires-auth="true">
+      <section class="page-section">
+        <div class="section-header">
+          <h1 class="section-title">Relatório de guias</h1>
+          <p class="section-subtitle">
+            Acompanhe a disponibilidade, especialidades e avaliações dos guias
+            cadastrados na comunidade.
+          </p>
+        </div>
+        <div class="page-section__content">
+          <p>
+            As informações exibidas abaixo são atualizadas automaticamente
+            sempre que um novo guia é cadastrado pelo formulário administrativo.
+          </p>
+        </div>
+      </section>
+
+      <section class="page-section" aria-labelledby="guides-table-heading">
+        <div class="section-header">
+          <h2 class="section-title" id="guides-table-heading">
+            Tabela dinâmica
+          </h2>
+          <p class="section-subtitle">
+            Utilize filtros, ordenações e ações de edição diretamente na tabela
+            carregada via LocalStorage.
+          </p>
+        </div>
+        <div class="page-section__content" id="guides-table-container">
+          <p>
+            Cadastre guias com nome, região de atuação e especialidades para
+            visualizar relatórios detalhados neste espaço.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="site-footer__text">
+        2025 &copy; Pega na Vara. Todos os direitos reservados.
+      </p>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Pega na Vara</title>
+    <link rel="icon" href="../assets/img/Logo.png" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a
+        class="site-header__brand"
+        href="./index.html"
+        aria-label="Página inicial"
+      >
+        <img
+          class="site-header__logo"
+          src="../assets/img/Logo.png"
+          alt="Logotipo Pega na Vara"
+        />
+      </a>
+      <nav class="site-header__nav" aria-label="Menu principal">
+        <button
+          id="mobile-menu-btn"
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          data-menu-toggle
+        >
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="sr-only">Alternar menu de navegação</span>
+        </button>
+        <div class="nav-menu site-header__menu" id="nav-menu">
+          <ul class="nav-menu__list">
+            <li class="nav-menu__item">
+              <a class="nav-menu__link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link" href="./sobre.html">Sobre</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link" href="./peixes.html">Peixes</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link" href="./contato.html">Contato</a>
+            </li>
+          </ul>
+          <a
+            class="button button--secondary nav-menu__cta"
+            href="./login.html"
+            data-auth-login
+            >Login</a
+          >
+          <button
+            type="button"
+            class="button button--secondary nav-menu__cta"
+            data-auth-logout
+            hidden
+          >
+            Sair
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="conteudo" data-page="home">
+      <section class="hero">
+        <div class="hero__content">
+          <span class="hero__eyebrow">Planeje a próxima pescaria</span>
+          <h1 class="hero__title">
+            Explore, conecte e pesque com especialistas.
+          </h1>
+          <p class="hero__subtitle">
+            Faça parte da maior comunidade de pesca esportiva do Brasil com
+            guias, locais e dicas exclusivas.
+          </p>
+          <a
+            class="button button--primary hero__cta"
+            href="./relatorio_guias.html"
+            >Conheça Nossos Guias</a
+          >
+        </div>
+        <figure class="hero__media">
+          <img
+            class="hero__image"
+            src="../assets/img/Banner_Pescaria.jpeg"
+            alt="Dois pescadores celebrando uma captura ao amanhecer"
+          />
+          <figcaption class="hero__caption">
+            Pesque com responsabilidade e preserve os nossos rios.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="highlights">
+        <div class="section-header">
+          <h2 class="section-title">Destaques</h2>
+          <p class="section-subtitle">
+            Conte com profissionais, roteiros e informações confiáveis para
+            pescar melhor.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card">
+            <!-- Adicionar Imagem -->
+            <div
+              class="card__illustration card__illustration--guides"
+              role="img"
+              aria-label="Guia auxiliando pescadores em um barco"
+            ></div>
+            <div class="card__content">
+              <h3 class="card__title">Os melhores profissionais da pesca</h3>
+              <p class="card__description">
+                Conheça especialistas certificados prontos para planejar cada
+                detalhe da sua jornada.
+              </p>
+              <a
+                class="button button--ghost card__action"
+                href="./relatorio_guias.html"
+                >Veja mais</a
+              >
+            </div>
+          </article>
+
+          <article class="card">
+            <!-- Adicionar Imagem -->
+            <div
+              class="card__illustration card__illustration--spots"
+              role="img"
+              aria-label="Mapa com pontos de pesca destacados"
+            ></div>
+            <div class="card__content">
+              <h3 class="card__title">Descubra novos pontos de pesca</h3>
+              <p class="card__description">
+                Acesse roteiros exclusivos, condições climáticas e estrutura de
+                apoio em tempo real.
+              </p>
+              <a
+                class="button button--ghost card__action"
+                href="./relatorio_locais.html"
+                >Veja mais</a
+              >
+            </div>
+          </article>
+
+          <article class="card">
+            <!-- Adicionar Imagem -->
+            <div
+              class="card__illustration card__illustration--species"
+              role="img"
+              aria-label="Peixe em destaque em águas cristalinas"
+            ></div>
+            <div class="card__content">
+              <h3 class="card__title">Guia completo de peixes</h3>
+              <p class="card__description">
+                Aprenda sobre espécies, hábitos alimentares e melhores iscas
+                para cada temporada.
+              </p>
+              <a
+                class="button button--ghost card__action"
+                href="./guia_peixes.html"
+                >Veja mais</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="catch-and-release">
+        <div class="section-header">
+          <h2 class="section-title">Pesque e solte</h2>
+          <p class="section-subtitle">
+            Preserve os ambientes aquáticos praticando a pesca esportiva com
+            responsabilidade.
+          </p>
+        </div>
+        <ul class="principles-list">
+          <li class="principles-list__item">
+            Utilize anzóis sem farpa para reduzir o impacto na soltura.
+          </li>
+          <li class="principles-list__item">
+            Mantenha o peixe na água sempre que possível e manuseie com as mãos
+            molhadas.
+          </li>
+          <li class="principles-list__item">
+            Registre a captura rapidamente e devolva o animal ao habitat de
+            origem.
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="site-footer__text">
+        2025 &copy; Pega na Vara. Todos os direitos reservados.
+      </p>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

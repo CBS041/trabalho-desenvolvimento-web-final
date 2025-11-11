@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Pega na Vara</title>
+    <link rel="icon" href="../assets/img/Logo.png" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-header__brand" href="./index.html" aria-label="Página inicial">
+        <img class="site-header__logo" src="../assets/img/Logo.png" alt="Logotipo Pega na Vara" />
+      </a>
+  <nav class="site-header__nav" aria-label="Menu principal">
+        <button
+          id="mobile-menu-btn"
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          data-menu-toggle
+        >
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="sr-only">Alternar menu de navegação</span>
+        </button>
+        <div class="nav-menu site-header__menu" id="nav-menu">
+          <ul class="nav-menu__list">
+            <li class="nav-menu__item"><a class="nav-menu__link" href="./index.html">Home</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link" href="./sobre.html">Sobre</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link" href="./peixes.html">Peixes</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link" href="./contato.html">Contato</a></li>
+          </ul>
+          <a class="button button--secondary nav-menu__cta" href="./login.html" data-auth-login>Login</a>
+          <button type="button" class="button button--secondary nav-menu__cta" data-auth-logout hidden>Sair</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-content" data-page="about">
+      <section class="page-section">
+        <div class="section-header">
+          <h1 class="section-title">O que é a comunidade Pega na Vara?</h1>
+          <p class="section-subtitle">
+            Fundada em 1957, a comunidade nasceu do desejo de um grupo de amigos de transformar a pesca esportiva em um elo de amizade e conservação.
+          </p>
+        </div>
+        <div class="page-section__content">
+          <p>
+            A Comunidade Pega na Vara começou em uma pequena vila ribeirinha quando cinco amigos decidiram levar a paixão pelo rio além do lazer. Esses pioneiros foram:
+          </p>
+          <ul class="page-section__list">
+            <li>Eriveldo Carlinhos Pedroso da Cunha Kaent de Souza Lima Junior III (1919–1973)</li>
+            <li>Ferdinando Adamastor Ferroso (1922–1989)</li>
+            <li>Leandro Neto Costa (1928–2004)</li>
+            <li>Moacir Ricardo de Pinho (1931–1998)</li>
+            <li>Ricardo Araujo (1935–2010)</li>
+          </ul>
+          <p>
+            Os primeiros encontros aconteciam ao entardecer, às margens do rio, onde histórias e técnicas eram compartilhadas com entusiasmo. O nome “Pega na Vara” surgiu de uma brincadeira à beira d’água e rapidamente se transformou em símbolo de companheirismo.
+          </p>
+          <p>
+            Com o passar dos anos, a comunidade cresceu e atraiu pescadores de todas as idades, sempre com o compromisso de preservar os rios, cuidar dos peixes e manter o equilíbrio entre ser humano e natureza.
+          </p>
+          <blockquote class="page-section__quote">
+            <p>“Mais importante do que o peixe, é a história que a gente leva pra casa.”</p>
+            <cite>Eriveldo Carlinhos Pedroso</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="page-section">
+        <div class="section-header">
+          <h2 class="section-title">Pega na Vara hoje</h2>
+          <p class="section-subtitle">
+            Tradição, tecnologia e consciência ambiental mantêm viva a essência dos fundadores em todo o Brasil.
+          </p>
+        </div>
+        <div class="page-section__content">
+          <p>
+            Mesmo após a despedida dos fundadores, o espírito da Pega na Vara permaneceu. O que começou como uma confraria local tornou-se um movimento nacional, reunindo apaixonados por pesca esportiva do litoral nordestino às águas frias do sul.
+          </p>
+          <p>
+            A sede histórica segue em Curitiba, guardando as memórias do grupo, enquanto a internet conectou pescadores do país inteiro em fóruns, transmissões e encontros virtuais que mantêm o sentimento de união sempre presente.
+          </p>
+          <p>
+            Hoje, a Pega na Vara equilibra a sabedoria dos antigos com novas tecnologias para promover conservação, companheirismo e experiências inesquecíveis à beira d’água.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="site-footer__text">2025 &copy; Pega na Vara. Todos os direitos reservados.</p>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
